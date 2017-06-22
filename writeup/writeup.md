@@ -41,9 +41,13 @@ signs data set:
 
 ####2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data are distributed. 
+Here is an exploratory visualization of the data set. It is a bar chart showing how the train, validation and test data are distributed. 
 
 ![alt text][image1]
+
+To get an idea what the images in the German Traffic Signs Dataset look like, I visualize one sign of each class.
+
+
 
 ###Design and Test a Model Architecture
 
@@ -152,8 +156,4 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 
 
 For the second image ... 
-
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
-
 
