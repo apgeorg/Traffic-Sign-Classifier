@@ -24,7 +24,7 @@ In this project we are buildung a traffic sign classifier using the German Traff
 Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
-**Data Set Summary & Exploration**
+### Data Set Summary & Exploration 
 
 ***1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.***
 
