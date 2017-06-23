@@ -1,4 +1,4 @@
-*Traffic Sign Recognition* 
+## **Traffic Sign Recognition** 
 
 In this project we are buildung a traffic sign classifier using the German Traffic Sign Dataset. The goals / steps of this project are the following:
 
