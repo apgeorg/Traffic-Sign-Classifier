@@ -89,7 +89,7 @@ My final model consisted of the following layers:
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used an Adam optimizer with a fix learning rate 1e-3. The batch size was set to 32 images. The weights were initialized by a truncated normal distribution. The network was trained for 10 epochs on a notebook with a onboard GPU and it takes about 1 hour. 
+To train the model, I used an Adam optimizer with a fix learning rate 1e-3. The batch size was set to 32 images. The weights were initialized by a truncated normal distribution. The network was trained for 10 epochs on a notebook and it takes about 1 hour. 
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
