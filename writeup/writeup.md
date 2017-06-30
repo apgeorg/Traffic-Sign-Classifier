@@ -11,8 +11,8 @@ In this project we are buildung a traffic sign classifier using the German Traff
 
 [//]: # (Image References)
 
-[image1]: ./images/histogram.png "Distribution"
-[image2]: ./images/signs.png "Different Signs"
+[image1]: ./images/histogram.png "Distribution of Train, Test, Validation Data"
+[image2]: ./images/signs.png "Class Labels (Signs)"
 [image23]: ./examples/grayscale.jpg "Grayscaling"
 [image33]: ./examples/random_noise.jpg "Random Noise"
 [image43]: ./examples/placeholder.png "Traffic Sign 1"
@@ -46,7 +46,7 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 To get an idea what the images in the German Traffic Signs Dataset look like, I visualize one sign of each class.
 
-
+![alt text][image2]
 
 ### Design and Test a Model Architecture
 
