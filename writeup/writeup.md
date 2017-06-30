@@ -16,11 +16,11 @@ In this project we are buildung a traffic sign classifier using the German Traff
 [image3]: ./images/new_train_distribution.png "New Train Data Set Distribution"
 [image4]: ./images/augmented.png "Augmentation"
 [image5]: ./images/grayscale.png "Grayscaling"
-[image6]: ./images/sign1.png "Traffic Sign 1"
-[image7]: ./images/sign2.png "Traffic Sign 2"
-[image8]: ./images/sign3.png "Traffic Sign 3"
-[image9]: ./images/sign4.png "Traffic Sign 4"
-[image10]: ./images/sign5.png "Traffic Sign 5"
+[image6]: ./images/sign1.jpg "Traffic Sign 1"
+[image7]: ./images/sign2.jpg "Traffic Sign 2"
+[image8]: ./images/sign3.jpg "Traffic Sign 3"
+[image9]: ./images/sign4.jpg "Traffic Sign 4"
+[image10]: ./images/sign5.jpg "Traffic Sign 5"
 
 ## Rubric Points
 Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
