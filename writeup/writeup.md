@@ -110,15 +110,15 @@ If an iterative approach was chosen:
 
 ##### How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
 
-*First I added dropout layers between the fully connected layers to prevent overfitting. Further I added more convolutional  layers before performing pooling as the well-known VGG16 architecture do.*
+*First, I added dropout layers between the fully connected layers to prevent overfitting and then I added more convolutional  layers before performing pooling as the well-known VGG16 architecture do.*
 
 ##### Which parameters were tuned? How were they adjusted and why?
 
-*It was more a try and error process. I was adjusting the kernel and filter size of the convolution layers to get more features etc. Furthermore I was adjusting the keep probability rate if the validation accuracy was much more less than the training accuracy. The learning rate and epochs where not adjusted because they were quite enough chosen. A good practice to tune parameters is to perform grid search.*  
+*It was more a try and error process. I was adjusting kernel and filter size of the convolution layers to get more features etc. Furthermore I was adjusting the keep probability rate if the validation accuracy was much more less than the training accuracy. Learning rate and epochs were not adjusted because they were suitable enough. A good practice to tune parameters is to perform grid search.*  
 
 ##### What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
-*As we have learned the dropout layer randomly ignores neurons during training. The effect is that the network becomes less sensitive to the specific weights. That means that the network is more generalized and is less likely to overfit the training data. In general, convolutional layers are quite good for image classification because they are extracting features of images. In addition, I think that double the filter size of a convolution layer after performing max pooling is good practice.*
+*An important design choice is to use dropout layers, which randomly ignores neurons during training. The effect is that the network becomes less sensitive to the specific weights. That means that the network is more generalized and is less likely to overfit the training data. In general, convolutional layers are quite good for image classification because they are extracting features of images. In addition, I think that double the filter size of a convolution layer after performing max pooling is good practice.*
 
 ### Test a Model on New Images
 
