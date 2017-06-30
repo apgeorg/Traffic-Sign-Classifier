@@ -13,6 +13,7 @@ In this project we are buildung a traffic sign classifier using the German Traff
 
 [image1]: ./images/histogram.png "Distribution of Train, Test, Validation Data"
 [image2]: ./images/signs.png "Class Labels (Signs)"
+[image3]: ./images/new_train_distribution.png "New Train Data Set Distribution"
 [image23]: ./examples/grayscale.jpg "Grayscaling"
 [image33]: ./examples/random_noise.jpg "Random Noise"
 [image43]: ./examples/placeholder.png "Traffic Sign 1"
@@ -51,6 +52,12 @@ To get an idea what the images in the German Traffic Signs Dataset look like, I 
 ### Design and Test a Model Architecture
 
 #### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
+
+As a first step, I decided to generate additional data because of the imbalance of the train data set. 
+To add more data to the the data set, I rotate, contrast and sharpen the images randomly. I use this data augmentation technique to the classes with less samples, so that the final train data set is more balanced as we can see in the following illustration.
+
+![alt text][image3]
+
 
 As a first step, I decided to convert the images to grayscale because ...
 
