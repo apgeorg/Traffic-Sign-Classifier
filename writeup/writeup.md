@@ -12,13 +12,14 @@ In this project we are buildung a traffic sign classifier using the German Traff
 [//]: # (Image References)
 
 [image1]: ./images/histogram.png "Distribution"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image2]: ./images/signs.png "Different Signs"
+[image23]: ./examples/grayscale.jpg "Grayscaling"
+[image33]: ./examples/random_noise.jpg "Random Noise"
+[image43]: ./examples/placeholder.png "Traffic Sign 1"
+[image53]: ./examples/placeholder.png "Traffic Sign 2"
+[image63]: ./examples/placeholder.png "Traffic Sign 3"
+[image73]: ./examples/placeholder.png "Traffic Sign 4"
+[image83]: ./examples/placeholder.png "Traffic Sign 5"
 
 ## Rubric Points
 Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -39,11 +40,13 @@ signs data set:
 
 #### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the train, validation and test data are distributed. 
+Here is an exploratory visualization of the data set. It is a bar chart showing how the train, validation and test data are distributed. As you can see in the illustration below, the train data set ist not uniformly distributed. This could mean that less-data classes are less likely to be predicted than classes with more data. 
 
 ![alt text][image1]
 
 To get an idea what the images in the German Traffic Signs Dataset look like, I visualize one sign of each class.
+
+
 
 ### Design and Test a Model Architecture
 
