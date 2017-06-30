@@ -14,7 +14,7 @@ In this project we are buildung a traffic sign classifier using the German Traff
 [image1]: ./images/histogram.png "Distribution of Train, Test, Validation Data"
 [image2]: ./images/signs.png "Class Labels (Signs)"
 [image3]: ./images/new_train_distribution.png "New Train Data Set Distribution"
-[image4]: ./images/original_augmented_img.png "Original and Augmented Image"
+[image4]: ./images/augmented.png "Augmentation"
 [image5]: ./images/grayscale.jpg "Grayscaling"
 [image33]: ./examples/random_noise.jpg "Random Noise"
 [image43]: ./examples/placeholder.png "Traffic Sign 1"
