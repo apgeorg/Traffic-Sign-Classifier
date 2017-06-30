@@ -99,7 +99,8 @@ My final model results were:
 * test set accuracy of 96.5%
 
 If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
+**What was the first architecture that was tried and why was it chosen?
+
 *As first approach, I was trying the LeNet architecture from the LeNet lab on normalized data. These architecture was quite enough to reach an validation accuracy > 93%.* 
 
 * What were some problems with the initial architecture?
