@@ -14,7 +14,8 @@ In this project we are buildung a traffic sign classifier using the German Traff
 [image1]: ./images/histogram.png "Distribution of Train, Test, Validation Data"
 [image2]: ./images/signs.png "Class Labels (Signs)"
 [image3]: ./images/new_train_distribution.png "New Train Data Set Distribution"
-[image23]: ./examples/grayscale.jpg "Grayscaling"
+[image4]: ./images/original_augmented_img.png "Original and Augmented Image"
+[image5]: ./images/grayscale.jpg "Grayscaling"
 [image33]: ./examples/random_noise.jpg "Random Noise"
 [image43]: ./examples/placeholder.png "Traffic Sign 1"
 [image53]: ./examples/placeholder.png "Traffic Sign 2"
@@ -58,23 +59,15 @@ To add more data to the the data set, I rotate, contrast and sharpen the images 
 
 ![alt text][image3]
 
-
-As a first step, I decided to convert the images to grayscale because ...
-
-Here is an example of a traffic sign image before and after grayscaling.
-
-As a last step, I normalized the image data because ...
-
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
-
 Here is an example of an original image and an augmented image:
 
-![alt text][image3]
+![alt text][image4]
 
-The difference between the original data set and the augmented data set is the following ... 
+Next, I decided to convert the images to grayscale to reduce the dimensions and complexity of the neural network. Here is an example of a traffic sign image before and after grayscaling.
 
+![alt text][image5]
+
+As a last step, I normalized the image data to a range of [0,1] by using *pixel / 255*, so the network can treat every feature equally.
 
 ####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
