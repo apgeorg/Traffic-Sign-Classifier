@@ -21,6 +21,7 @@ In this project we are buildung a traffic sign classifier using the German Traff
 [image8]: ./images/sign3.jpg "Traffic Sign 3"
 [image9]: ./images/sign4.jpg "Traffic Sign 4"
 [image10]: ./images/sign5.jpg "Traffic Sign 5"
+[image11]: ./images/web_signs.png "Web Signs"
 
 ## Rubric Points
 Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -99,24 +100,23 @@ My final model results were:
 
 If an iterative approach was chosen:
 
-**What was the first architecture that was tried and why was it chosen?
+##### What was the first architecture that was tried and why was it chosen?
 
 *As first approach, I was trying the LeNet architecture from the LeNet lab on normalized data. These architecture was quite enough to reach an validation accuracy > 93%.* 
 
-**What were some problems with the initial architecture?
+##### What were some problems with the initial architecture?
 
 *The problem of the initial architecture was that the model was not good enough and its poor performance on the test set.*   
 
-**How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. 
-A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+##### How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
 
 *First I added dropout layers between the fully connected layers to prevent overfitting. Further I added more convolutional  layers before performing pooling as the well-known VGG16 architecture do.*
 
-**Which parameters were tuned? How were they adjusted and why?
+##### Which parameters were tuned? How were they adjusted and why?
 
 *It was more a try and error process. I was adjusting the kernel and filter size of the convolution layers to get more features etc. Furthermore I was adjusting the keep probability rate if the validation accuracy was much more less than the training accuracy. The learning rate and epochs where not adjusted because they were quite enough chosen. A good practice to tune parameters is to perform grid search.*  
 
-**What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+##### What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
 *As we have learned the dropout layer randomly ignores neurons during training. The effect is that the network becomes less sensitive to the specific weights. That means that the network is more generalized and is less likely to overfit the training data. In general, convolutional layers are quite good for image classification because they are extracting features of images. In addition, I think that double the filter size of a convolution layer after performing max pooling is good practice.*
 
@@ -126,8 +126,7 @@ A high accuracy on the training set but low accuracy on the validation set indic
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image6] ![alt text][image7] ![alt text][image8] 
-![alt text][image9] ![alt text][image10]
+![alt text][image11]
 
 The first image might be difficult to classify because ...
 
