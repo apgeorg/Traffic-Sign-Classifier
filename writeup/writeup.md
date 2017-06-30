@@ -69,34 +69,33 @@ Next, I decided to convert the images to grayscale to reduce the dimensions and 
 
 As a last step, I normalized the image data to a range of [0,1] by using *pixel / 255*, so the network can treat every feature equally.
 
-####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+#### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
 My final model consisted of the following layers:
 
-| Layer         		|     Description	        					| 
+| Layer         		      |     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
+| Input         		      | 32x32x1 grayscale image   							| 
+| Convolution 3x3     	 | 1x1 stride, same padding, outputs 32x32x64 	 |
 | RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
+| Max pooling	      	   | 2x2 stride,  outputs 16x16x64 				|
+| Convolution 3x3	      | etc.      									|
+| Fully connected		     | etc.        									|
+| Softmax				           | etc.        									|
 |						|												|
 |						|												|
  
 
+#### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+To train the model, I used an Adam optimizer with a fix learning rate 1e-3. The batch size was set to 32 images. The weights were initialized by a truncated normal distribution. The network was trained for 10 epochs on a notebook with a onboard GPU and it takes about 1 hour. 
 
-To train the model, I used an ....
-
-####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+#### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of  100%
+* validation set accuracy of 98.5% 
+* test set accuracy of 96.5%
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
