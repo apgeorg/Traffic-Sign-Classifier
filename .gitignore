@@ -1,6 +1,7 @@
-data
+traffic-sign-data
 .ipynb_checkpoints
 *.h5
 models
 *.swp
 *.p
+*.zip
