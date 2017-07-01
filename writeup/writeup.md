@@ -152,24 +152,22 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
-
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model is 100% sure that this is a priority road sign (probability of 100%). The other top five softmax probabilities are zero. 
 
 ![alt text][image112]
 
-For the second image ... 
+For the second image, the model is relatively sure that this is a roundabout mandatory. It achieves a probability of 55% for the "Roundabout mandatory" sign. The other top five softmax probabilities are shown in the illustration below.
 
 ![alt text][image113]
 
-For the third image ... 
+For the third image, the model is sure that this is a speed limit (30km/h) sign	with a probability of 100%. 
 
 ![alt text][image114]
 
-For the fourth image ... 
+For the fourth image, the model is again sure that this is a keep right sign	with a probability of 100%.  
 
 ![alt text][image115]
 
-For the fifth image ... 
+For the fifth image, the model misclassified the stop sign. In other words, the model predicts an end of no passing by vehicles over 3.5 metric tons sign with a probability of 60%. Furter, the stop sign is not listed in the top five softmax probabilities which means that the model has trouble predicting on stop signs.
 
 ![alt text][image116]
