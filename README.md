@@ -29,8 +29,6 @@ In this project I built and trained a deep neural network to classify traffic si
 [image115]: ./images/top5_sign4.png "Traffic Sign 4 Prediction"
 [image116]: ./images/top5_sign5.png "Traffic Sign 5 Prediction"
 
-## Rubric Points
-Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
 ### Data Set Summary & Exploration 
