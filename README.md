@@ -44,7 +44,7 @@ signs data set:
 * The shape of a traffic sign image is (32, 32, 3).
 * The number of unique classes/labels in the data set is 43.
 
-#### 2. Visualization of the dataset
+#### Visualization of the dataset
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the train, validation and test data are distributed. As you can see in the illustration below, the train data set ist not uniformly distributed. This could mean that less-data classes are less likely to be predicted than classes with more data. 
 
@@ -122,15 +122,13 @@ If an iterative approach was chosen:
 
 *An important design choice is to use dropout layers, which randomly ignores neurons during training. The effect is that the network becomes less sensitive to the specific weights. That means that the network is more generalized and is less likely to overfit the training data. In general, convolutional layers are quite good for image classification because they are extracting features of images. In addition, I think that double the filter size of a convolution layer after performing max pooling is good practice.*
 
-### Test a Model on New Images
+### Model Predictions
 
 Here are five German traffic signs that I found on the web:
 
 ![alt text][image11]
 
 All images show good brightness conditions and look very ideal for the classifier. Possible difficulties could be caused by the copyright labels in the pictures. 
-
-#### Model Predictions
 
 Here are the results of the prediction:
 
@@ -144,6 +142,8 @@ Here are the results of the prediction:
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This is not comparable with  the accuracy on the test set because the test set contains more samples. 
+
+### Discussion of the results
 
 For the first image, the model is 100% sure that this is a priority road sign (probability of 100%). The other top five softmax probabilities are zero. 
 
