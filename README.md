@@ -1,7 +1,6 @@
 ## **Traffic Sign Classification** 
 
-This project was submitted for the Udacity Self-Driving Car Nanodegree program. 
-In this project I built and trained a deep neural network to classify traffic signs in Tensorflow using the German Traffic Sign Dataset. The goals / steps of this project are the following:
+The goal of this project was to build and train a deep neural network to classify traffic signs in Tensorflow using the German Traffic Sign Dataset. The steps of this project are the following:
 
 * Load the data set (see below for links to the project data set)
 * Explore, summarize and visualize the data set
